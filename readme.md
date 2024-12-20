@@ -83,6 +83,12 @@ Contributions are welcome! Feel free to:
 3. Add your test examples
 4. Submit a Pull Request
 
+## Coverage
+
+![Coverage Report](https://github.com/dm-grinko/jest-templates/blob/main/coverage.png)
+
 ## 📝 License
 
 MIT License - feel free to use these examples in your own projects.
+
+
