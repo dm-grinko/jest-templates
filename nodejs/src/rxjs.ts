@@ -5,6 +5,7 @@ export interface User {
     id: number;
     name: string;
     yearOfBirth: number;
+    age?: number;
 }
 
 export const users: User[] = [

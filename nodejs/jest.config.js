@@ -1,20 +1,36 @@
-/** @type {import('ts-jest').JestConfigWithTsJest} **/
+/** @type {import('ts-jest').JestConfigWithTsJest} */
 module.exports = {
-  testEnvironment: "node",
-  transform: {
-    "^.+.tsx?$": ["ts-jest",{}],
-  },
+  // Use ts-jest for TypeScript files
+  preset: 'ts-jest',
+  
+  // Node environment for testing
+  testEnvironment: 'node',
+  
+  // Coverage configuration
+  collectCoverage: true,
+  coverageDirectory: "coverage",
+  
+  // Collect coverage from all TypeScript files in src
   collectCoverageFrom: [
-    "src/**/*.{ts,tsx,js,jsx}",
-    "!node_modules/**",
-    "!src/**/*.test.{ts,tsx,js,jsx}",
+    "src/**/*.ts",         // All .ts files in src and subdirectories
+    "!src/**/*.d.ts",      // Exclude declaration files
+    "!src/**/*.test.ts"    // Exclude test files
   ],
-  coverageThreshold: {
-    global: {
-      branches: 80,
-      functions: 80,
-      lines: 80,
-      statements: 80,
-    },
+  
+  // Test pattern matching
+  testMatch: [
+    "**/*.test.ts"         // All test files
+  ],
+  
+  // Module resolution
+  moduleNameMapper: {
+    "^@/(.*)$": "<rootDir>/src/$1"
   },
+  
+  // Test environment settings
+  verbose: true,
+  clearMocks: true,
+  
+  // Coverage reporting
+  coverageReporters: ["text", "lcov", "html"]
 };

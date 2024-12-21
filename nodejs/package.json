@@ -4,10 +4,7 @@
   "main": "index.js",
   "author": "Dmitry Grinko <dm.grinko@gmail.com>",
   "scripts": {
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:coverage": "jest --collectCoverage --watch",
-    "test:rxjs": "ts-node src/rxjs.ts"
+    "test": "jest --coverage --watchAll --config ./jest.config.js"
   },
   "keywords": [
     "jest",
