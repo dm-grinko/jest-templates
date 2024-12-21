@@ -10,24 +10,6 @@ This repository aims to provide:
 - Examples across various programming languages and testing frameworks
 - Common testing patterns and techniques
 
-## 📚 Examples Include
-
-- JavaScript/TypeScript
-  - Jest
-  - Mocha
-  - Jasmine
-- Python
-  - PyTest
-  - UnitTest
-- Java
-  - JUnit
-  - TestNG
-- And more to come...
-
-## 🔍 Coverage
-
-![Coverage Report](https://github.com/dm-grinko/jest-templates/blob/main/coverage.png)
-
 ## 📝 License
 
 MIT License - feel free to use these examples in your own projects.
